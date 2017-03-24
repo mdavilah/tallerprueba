@@ -1,3 +1,12 @@
 <h1>Pages#x</h1>
 <h1>Mario Davila</h1>
 <p>Find me in app/views/pages/x.html.erb</p>
+
+<form action="<%= pages_save_user_path %>" method="POST">
+	<input type="text" name="nombre" value="">
+	<input type="text" name="email" value="">
+	<input type="text" name="age" value="">
+	<input type="submit" name="enviar" value="">
+</form>
+
+<%= flash[:notice] %>
